@@ -20,22 +20,22 @@ La API está construida con:
 ```bash
 git clone <https://github.com/jandercastrillon16-svg/biblioteca-api>
 cd biblioteca-api
-
+```
 
 Instalar dependencias:
-
+```
 npm install
-
+```
 
 Asegurarse de tener SQLite instalado (si no, instalar):
-
+```
 npm install sqlite3
-
+```
 
 Iniciar el servidor:
-
+```
 node server.js
-
+```
 
 El servidor correrá por defecto en http://localhost:3000.
 
@@ -47,14 +47,14 @@ Método: POST
 Ruta: /auth/register
 
 Body:
-
+```
 {
   "fullName": "Juan Pérez",
   "email": "juan@example.com",
   "password": "123456",
   "role": "admin" // o "user"
 }
-
+```
 
 La contraseña se guarda cifrada con bcrypt.
 
@@ -65,21 +65,21 @@ Método: POST
 Ruta: /auth/login
 
 Body:
-
+```
 {
   "email": "juan@example.com",
   "password": "123456"
 }
-
+```
 
 Respuesta exitosa:
-
+```
 {
   "access_token": "<JWT>",
   "token_type": "bearer"
 }
 
-
+```
 El JWT contiene la información mínima: sub (nombre del usuario y email), role, iat y exp.
 
 3. Rutas protegidas de libros
@@ -105,14 +105,14 @@ Ruta: /books
 Acceso: solo admin
 
 Body:
-
+```
 {
   "titulo": "Clean Code",
   "autor": "Robert C. Martin",
   "ano_publicacion": 2008,
   "en_stock": true
 }
-
+```
 c) Ver un libro por ID
 
 Método: GET
@@ -130,14 +130,14 @@ Ruta: /books/:id
 Acceso: cualquier usuario autenticado
 
 Body: (los campos a actualizar)
-
+```
 {
   "titulo": "Clean Code - Updated",
   "autor": "Robert C. Martin",
   "ano_publicacion": 2008,
   "en_stock": false
 }
-
+```
 e) Eliminar un libro
 
 Método: DELETE
@@ -177,3 +177,6 @@ Iniciar sesión → POST /auth/login → obtener JWT
 Enviar JWT en el header Authorization para acceder a /books
 
 Crear, editar o eliminar libros según rol
+
+
+AUTOR: JANDER CASTRILLON
