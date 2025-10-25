@@ -10,6 +10,11 @@ La API está construida con:
 - Sequelize (SQLite como base de datos)
 - JWT para autenticación y control de acceso
 - Bcrypt para cifrado de contraseñas
+![Node.js](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg)
+![Express](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg)
+![SQLite](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg)
+![JWT](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jsonwebtokens/jsonwebtokens-original.svg)
+![Bcrypt](https://img.icons8.com/color/48/000000/bcrypt.png)
 
 ---
 
